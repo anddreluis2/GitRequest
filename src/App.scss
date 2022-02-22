@@ -47,7 +47,9 @@ margin-bottom: 20px;
   width: 100%;
   display: flex-start;
   padding: 2px;
+  align-items: center;
   svg {
+    align-items: center;
     font-size: 18px;
   }
 }
@@ -69,4 +71,9 @@ margin-bottom: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.Erro {
+  margin-top: 5px;
+  color: red;
 }
