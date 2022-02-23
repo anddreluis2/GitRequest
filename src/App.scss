@@ -13,7 +13,7 @@ margin-bottom: 20px;
   box-sizing: border-box;
   background-color: #2b2b2b;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   list-style: none;
 }
 
@@ -45,13 +45,9 @@ margin-bottom: 20px;
 
 .repos{
   width: 100%;
-  display: flex-start;
   padding: 2px;
-  align-items: center;
-  svg {
-    align-items: center;
-    font-size: 18px;
-  }
+  align-content: center;
+ 
 }
 
 .btn {
@@ -63,7 +59,7 @@ margin-bottom: 20px;
 }
 
 .btn:hover{
-  color: red;
+  color: rgb(0, 0, 0);
   transition: 400ms;
 }
 
@@ -74,6 +70,7 @@ margin-bottom: 20px;
 }
 
 .Erro {
-  margin-top: 5px;
+  margin-top: 10px;
   color: red;
+  margin-left: 40px;
 }
