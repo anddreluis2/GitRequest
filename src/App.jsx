@@ -24,13 +24,14 @@ function App() {
         <input className="input" type="text" onChange={e => setUser(e.target.value)} placeholder="Digite o user:"></input>
         <button className="btn" type="Submit" onClick={getRepo}>Enviar</button>
       </form>
-      {repositories.message === 'Not Found' ? (<h1 className="Erro">O usuário não existe!</h1>) : ((<div className="reposit">
-        <h1 className="Titulo"><BsGithub /> {repositories[0]?.owner?.login}</h1>
+      {repositories.message === 'Not Found' ? (<h1 className="Erro">O usuário não existe!</h1>) :
+       ((<div className="reposit">
+        <h1 className="Titulo"> <BsGithub /> {repositories[0]?.owner?.login}</h1>
         <ul className="repos">
           {repositories.map(repo => {
             return (
-              <li className="repos" key={repo.full_name}>
-                <p>{repo.name} - {repo.stargazers_count} <AiFillStar /></p>
+              <li className="repos-li" key={repo.full_name}>
+                {repo.name} - {repo.stargazers_count} &nbsp; <AiFillStar/>
               </li>
             )
           })}
